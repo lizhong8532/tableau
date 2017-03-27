@@ -60,6 +60,8 @@
         this.list.push(obj)
       },
       removeList (i) {
+        let color = this.patterns.splice(i, 1)
+        this.patterns.push(color)
         this.list.splice(i, 1)
         window.list.splice(i, 1)
       },
